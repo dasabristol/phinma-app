@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">management-app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- School items -->
+    <string-array name="school_array">
+        <item>PHINMA</item>
+        <item>UPANG</item>
+        <item>MISYUBIBI</item>
+    </string-array>
+</resources>
