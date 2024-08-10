@@ -32,12 +32,13 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
                 android:src="@drawable/ic_launcher_background" />
 
         </androidx.cardview.widget.CardView>
@@ -45,9 +46,12 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
 
             <ImageButton
+                android:id="@+id/scholarship"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_launcher_background" />
@@ -67,12 +71,14 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
 
             <ImageButton
+                android:id="@+id/programs"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="20dp"
                 android:src="@drawable/ic_launcher_background" />
 
         </androidx.cardview.widget.CardView>
@@ -80,6 +86,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
 
             <ImageButton

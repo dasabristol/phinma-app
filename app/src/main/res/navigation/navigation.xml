@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_home2_to_profile"
             app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_home2_to_programs2"
+            app:destination="@id/programs2" />
+        <action
+            android:id="@+id/action_home2_to_scholarship2"
+            app:destination="@id/scholarship2" />
     </fragment>
     <fragment
         android:id="@+id/profile"
@@ -23,4 +29,18 @@
             android:id="@+id/action_profile_to_home2"
             app:destination="@id/home2" />
     </fragment>
+    <fragment
+        android:id="@+id/programs2"
+        android:name="com.example.management_app.programs"
+        android:label="fragment_programs"
+        tools:layout="@layout/fragment_programs" >
+        <action
+            android:id="@+id/action_programs2_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/scholarship2"
+        android:name="com.example.management_app.scholarship"
+        android:label="fragment_scholarship"
+        tools:layout="@layout/fragment_scholarship" />
 </navigation>

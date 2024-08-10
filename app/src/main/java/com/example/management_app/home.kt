@@ -24,6 +24,13 @@ class home : Fragment() {
             findNavController().navigate(R.id.action_home2_to_profile)
         }
 
+        binding.programs.setOnClickListener {
+            findNavController().navigate(R.id.action_home2_to_programs2)
+        }
+        binding.scholarship.setOnClickListener {
+            findNavController().navigate(R.id.action_home2_to_scholarship2)
+        }
+
 
         return binding.root
     }
