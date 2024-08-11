@@ -54,7 +54,23 @@
         android:id="@+id/scholarship2"
         android:name="com.example.management_app.scholarship"
         android:label="fragment_scholarship"
-        tools:layout="@layout/fragment_scholarship" />
+        tools:layout="@layout/fragment_scholarship" >
+        <action
+            android:id="@+id/action_scholarship2_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_scholarship2_to_hka2"
+            app:destination="@id/hka2" />
+        <action
+            android:id="@+id/action_scholarship2_to_hkb2"
+            app:destination="@id/hkb2" />
+        <action
+            android:id="@+id/action_scholarship2_to_hkc2"
+            app:destination="@id/hkc2" />
+        <action
+            android:id="@+id/action_scholarship2_to_hkd2"
+            app:destination="@id/hkd2" />
+    </fragment>
     <fragment
         android:id="@+id/radlearning"
         android:name="com.example.management_app.radlearning"
@@ -89,5 +105,41 @@
         <action
             android:id="@+id/action_facetoface_to_programs2"
             app:destination="@id/programs2" />
+    </fragment>
+    <fragment
+        android:id="@+id/hka2"
+        android:name="com.example.management_app.hka"
+        android:label="fragment_hka"
+        tools:layout="@layout/fragment_hka" >
+        <action
+            android:id="@+id/action_hka2_to_scholarship2"
+            app:destination="@id/scholarship2" />
+    </fragment>
+    <fragment
+        android:id="@+id/hkb2"
+        android:name="com.example.management_app.hkb"
+        android:label="fragment_hkb"
+        tools:layout="@layout/fragment_hkb" >
+        <action
+            android:id="@+id/action_hkb2_to_scholarship2"
+            app:destination="@id/scholarship2" />
+    </fragment>
+    <fragment
+        android:id="@+id/hkc2"
+        android:name="com.example.management_app.hkc"
+        android:label="fragment_hkc"
+        tools:layout="@layout/fragment_hkc" >
+        <action
+            android:id="@+id/action_hkc2_to_scholarship2"
+            app:destination="@id/scholarship2" />
+    </fragment>
+    <fragment
+        android:id="@+id/hkd2"
+        android:name="com.example.management_app.hkd"
+        android:label="fragment_hkd"
+        tools:layout="@layout/fragment_hkd" >
+        <action
+            android:id="@+id/action_hkd2_to_scholarship2"
+            app:destination="@id/scholarship2" />
     </fragment>
 </navigation>
