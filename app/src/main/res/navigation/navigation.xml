@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_home2_to_aboutus2"
             app:destination="@id/aboutus2" />
+        <action
+            android:id="@+id/action_home2_to_course2"
+            app:destination="@id/course2" />
     </fragment>
     <fragment
         android:id="@+id/profile"
@@ -153,5 +156,26 @@
         <action
             android:id="@+id/action_aboutus2_to_home2"
             app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/course2"
+        android:name="com.example.management_app.course"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course" >
+        <action
+            android:id="@+id/action_course2_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_course2_to_cite2"
+            app:destination="@id/cite2" />
+    </fragment>
+    <fragment
+        android:id="@+id/cite2"
+        android:name="com.example.management_app.cite"
+        android:label="fragment_cite"
+        tools:layout="@layout/fragment_cite" >
+        <action
+            android:id="@+id/action_cite2_to_course2"
+            app:destination="@id/course2" />
     </fragment>
 </navigation>

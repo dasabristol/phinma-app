@@ -11,8 +11,8 @@
 
     <!-- School items -->
     <string-array name="school_array">
-        <item>PHINMA</item>
-        <item>UPANG</item>
+        <item>PHINMA URDANETACITY</item>
+        <item>UPANG DAGUPAN</item>
         <item>MISYUBIBI</item>
     </string-array>
 
@@ -119,5 +119,8 @@
     <string name="aboutus13">To ensure the well-being and success of its students, PHINMA UPANG provides comprehensive support services including academic advising, career counseling, and health and wellness programs. The university’s dedicated faculty and staff are committed to guiding students throughout their academic journey and helping them achieve their goals.</string>
     <string name="aboutus14"><b>Commitment to Accessibility</b></string>
     <string name="aboutus15">PHINMA UPANG is dedicated to making quality education accessible to all. The university offers various scholarship programs, financial aid, and flexible payment options to support students from different socio-economic backgrounds. This commitment to accessibility ensures that more students have the opportunity to pursue their educational aspirations.</string>
+
+    <string name="cite"><b>Bachelor of Science in Information Technology</b></string>
+    <string name="cite1">The Bachelor of Science in Information Technology program provides students with skills and knowledge needed in relevant emerging high-growth areas in the industry. Through our program, we train students with the development and management of contemporary areas such as cloud computing and applications, analytics and data science, artificial intelligence, and the Internet of Things. We use a curriculum based on inputs and guidance from practicing industry experts.</string>
 
 </resources>
