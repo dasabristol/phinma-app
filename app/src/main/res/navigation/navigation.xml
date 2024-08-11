@@ -37,10 +37,34 @@
         <action
             android:id="@+id/action_programs2_to_home2"
             app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_programs2_to_radlearning"
+            app:destination="@id/radlearning" />
+        <action
+            android:id="@+id/action_programs2_to_flexlearning"
+            app:destination="@id/flexlearning" />
     </fragment>
     <fragment
         android:id="@+id/scholarship2"
         android:name="com.example.management_app.scholarship"
         android:label="fragment_scholarship"
         tools:layout="@layout/fragment_scholarship" />
+    <fragment
+        android:id="@+id/radlearning"
+        android:name="com.example.management_app.radlearning"
+        android:label="fragment_radlearning"
+        tools:layout="@layout/fragment_radlearning" >
+        <action
+            android:id="@+id/action_radlearning_to_programs2"
+            app:destination="@id/programs2" />
+    </fragment>
+    <fragment
+        android:id="@+id/flexlearning"
+        android:name="com.example.management_app.flexlearning"
+        android:label="fragment_flexlearning"
+        tools:layout="@layout/fragment_flexlearning" >
+        <action
+            android:id="@+id/action_flexlearning_to_programs2"
+            app:destination="@id/programs2" />
+    </fragment>
 </navigation>

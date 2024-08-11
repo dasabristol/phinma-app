@@ -22,6 +22,13 @@ class programs : Fragment() {
         binding.homee.setOnClickListener {
             findNavController().navigate(R.id.action_programs2_to_home2)
         }
+
+        binding.radlearning.setOnClickListener {
+            findNavController().navigate(R.id.action_programs2_to_radlearning)
+        }
+        binding.flexlearning.setOnClickListener {
+            findNavController().navigate(R.id.action_programs2_to_flexlearning)
+        }
         return binding.root
 
     }
