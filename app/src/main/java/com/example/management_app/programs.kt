@@ -29,6 +29,9 @@ class programs : Fragment() {
         binding.flexlearning.setOnClickListener {
             findNavController().navigate(R.id.action_programs2_to_flexlearning)
         }
+        binding.facetoface.setOnClickListener {
+            findNavController().navigate(R.id.action_programs2_to_facetoface)
+        }
         return binding.root
 
     }

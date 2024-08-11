@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_profile_to_home2"
             app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_profile_to_editprofile"
+            app:destination="@id/editprofile" />
     </fragment>
     <fragment
         android:id="@+id/programs2"
@@ -43,6 +46,9 @@
         <action
             android:id="@+id/action_programs2_to_flexlearning"
             app:destination="@id/flexlearning" />
+        <action
+            android:id="@+id/action_programs2_to_facetoface"
+            app:destination="@id/facetoface" />
     </fragment>
     <fragment
         android:id="@+id/scholarship2"
@@ -65,6 +71,23 @@
         tools:layout="@layout/fragment_flexlearning" >
         <action
             android:id="@+id/action_flexlearning_to_programs2"
+            app:destination="@id/programs2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editprofile"
+        android:name="com.example.management_app.editprofile"
+        android:label="editprofile" >
+        <action
+            android:id="@+id/action_editprofile_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/facetoface"
+        android:name="com.example.management_app.facetoface"
+        android:label="fragment_facetoface"
+        tools:layout="@layout/fragment_facetoface" >
+        <action
+            android:id="@+id/action_facetoface_to_programs2"
             app:destination="@id/programs2" />
     </fragment>
 </navigation>

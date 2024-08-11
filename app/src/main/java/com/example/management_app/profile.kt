@@ -18,41 +18,15 @@ private lateinit var binding: FragmentProfileBinding
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        // Inflate the layout using ViewBinding
         binding = FragmentProfileBinding.inflate(inflater, container, false)
-
-        // Setup Spinners
-        setupSpinners()
-
-        // Handle Save button click
         binding.save.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_home2)
         }
-
+        binding.editprofile.setOnClickListener {
+            findNavController().navigate(R.id.action_profile_to_editprofile)
+        }
         return binding.root
     }
 
-    private fun setupSpinners() {
-        // Setup Gender Spinner
-        val genderAdapter = ArrayAdapter.createFromResource(
-            requireContext(),
-            R.array.gender_array,
-            android.R.layout.simple_spinner_item
-        ).apply {
-            setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        }
-        binding.spinnerGender.adapter = genderAdapter
 
-        // Setup School Spinner
-        val schoolAdapter = ArrayAdapter.createFromResource(
-            requireContext(),
-            R.array.school_array,
-            android.R.layout.simple_spinner_item
-        ).apply {
-            setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        }
-        binding.spinnerSchool.adapter = schoolAdapter
-
-    }
 }
