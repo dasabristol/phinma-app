@@ -6,19 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.management_app.databinding.FragmentCiteBinding
+import com.example.management_app.databinding.FragmentComputerengBinding
 
-class cite : Fragment() {
-   private lateinit var binding: FragmentCiteBinding
-
+class computereng : Fragment() {
+    private lateinit var binding : FragmentComputerengBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       binding = FragmentCiteBinding.inflate(inflater, container, false)
 
-        binding.citebtn.setOnClickListener {
-            findNavController().navigate(R.id.action_cite2_to_course2)
+        binding = FragmentComputerengBinding.inflate(inflater, container, false)
+
+        binding.computerengbtn.setOnClickListener {
+            findNavController().navigate(R.id.action_computereng2_to_course2)
         }
         return binding.root
     }

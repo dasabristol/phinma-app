@@ -25,6 +25,12 @@ class course : Fragment() {
         binding.cite.setOnClickListener {
             findNavController().navigate(R.id.action_course2_to_cite2)
         }
+        binding.computereng.setOnClickListener {
+            findNavController().navigate(R.id.action_course2_to_computereng2)
+        }
+        binding.tourism.setOnClickListener {
+            findNavController().navigate(R.id.action_course2_to_tourism2)
+        }
         return binding.root
     }
 

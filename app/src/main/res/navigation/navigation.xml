@@ -168,6 +168,12 @@
         <action
             android:id="@+id/action_course2_to_cite2"
             app:destination="@id/cite2" />
+        <action
+            android:id="@+id/action_course2_to_computereng2"
+            app:destination="@id/computereng2" />
+        <action
+            android:id="@+id/action_course2_to_tourism2"
+            app:destination="@id/tourism2" />
     </fragment>
     <fragment
         android:id="@+id/cite2"
@@ -176,6 +182,24 @@
         tools:layout="@layout/fragment_cite" >
         <action
             android:id="@+id/action_cite2_to_course2"
+            app:destination="@id/course2" />
+    </fragment>
+    <fragment
+        android:id="@+id/computereng2"
+        android:name="com.example.management_app.computereng"
+        android:label="fragment_computereng"
+        tools:layout="@layout/fragment_computereng" >
+        <action
+            android:id="@+id/action_computereng2_to_course2"
+            app:destination="@id/course2" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourism2"
+        android:name="com.example.management_app.tourism"
+        android:label="fragment_tourism"
+        tools:layout="@layout/fragment_tourism" >
+        <action
+            android:id="@+id/action_tourism2_to_course2"
             app:destination="@id/course2" />
     </fragment>
 </navigation>

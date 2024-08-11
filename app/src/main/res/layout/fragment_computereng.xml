@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".cite">
+    tools:context=".computereng">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:id="@+id/linearlayout14"
+        android:id="@+id/linearlayout15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,7 +23,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearlayout14"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout15"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
@@ -34,43 +34,43 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            app:cardElevation="50dp"
-            app:cardMaxElevation="10dp"
-            app:cardCornerRadius="30dp">
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/cite"/>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/computereng"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/details"
-                android:gravity="center|bottom"
-                android:textSize="17dp"
-                android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/details"
+                    android:gravity="center|bottom"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="5dp"/>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cite"/>
+                android:text="@string/computereng"/>
 
             <TextView
 
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cite1"/>
+                android:text="@string/computereng1"/>
 
             <Button
-                android:id="@+id/citebtn"
+                android:id="@+id/computerengbtn"
                 android:text="See more course"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

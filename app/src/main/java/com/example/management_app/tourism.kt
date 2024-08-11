@@ -6,19 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.management_app.databinding.FragmentCiteBinding
+import com.example.management_app.databinding.FragmentTourismBinding
 
-class cite : Fragment() {
-   private lateinit var binding: FragmentCiteBinding
+class tourism : Fragment() {
+    private lateinit var binding: FragmentTourismBinding
+    // TODO: Rename and change types of parameters
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       binding = FragmentCiteBinding.inflate(inflater, container, false)
 
-        binding.citebtn.setOnClickListener {
-            findNavController().navigate(R.id.action_cite2_to_course2)
+        binding = FragmentTourismBinding.inflate(inflater, container, false)
+
+        binding.tourismbtn.setOnClickListener {
+            findNavController().navigate(R.id.action_tourism2_to_course2)
         }
         return binding.root
     }
