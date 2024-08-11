@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_home2_to_scholarship2"
             app:destination="@id/scholarship2" />
+        <action
+            android:id="@+id/action_home2_to_aboutus2"
+            app:destination="@id/aboutus2" />
     </fragment>
     <fragment
         android:id="@+id/profile"
@@ -141,5 +144,14 @@
         <action
             android:id="@+id/action_hkd2_to_scholarship2"
             app:destination="@id/scholarship2" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutus2"
+        android:name="com.example.management_app.aboutus"
+        android:label="fragment_aboutus"
+        tools:layout="@layout/fragment_aboutus" >
+        <action
+            android:id="@+id/action_aboutus2_to_home2"
+            app:destination="@id/home2" />
     </fragment>
 </navigation>

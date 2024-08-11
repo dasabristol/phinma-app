@@ -30,6 +30,9 @@ class home : Fragment() {
         binding.scholarship.setOnClickListener {
             findNavController().navigate(R.id.action_home2_to_scholarship2)
         }
+        binding.aboutus.setOnClickListener {
+            findNavController().navigate(R.id.action_home2_to_aboutus2)
+        }
 
 
         return binding.root
