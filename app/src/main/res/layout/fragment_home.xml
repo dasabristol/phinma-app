@@ -30,8 +30,8 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
             app:cardElevation="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
@@ -39,13 +39,20 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/map" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MAP"
+                android:layout_marginBottom="5dp"
+                android:gravity="center|bottom"/>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
             app:cardElevation="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
@@ -54,7 +61,14 @@
                 android:id="@+id/scholarship"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/scholarship" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SCHOLARSHIP"
+                android:layout_marginBottom="5dp"
+                android:gravity="center|bottom"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -69,8 +83,8 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" >
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
             app:cardElevation="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
@@ -79,13 +93,20 @@
                 android:id="@+id/programs"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/programs" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PROGRAMS"
+                android:layout_marginBottom="5dp"
+                android:gravity="center|bottom"/>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
             app:cardElevation="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
@@ -93,8 +114,14 @@
             <ImageButton
                 android:id="@+id/profile"
                 android:layout_width="wrap_content"
+                android:layout_height="121dp"
+                android:src="@drawable/profile" />
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_launcher_background" />
+                android:text="PROFILE"
+                android:layout_marginBottom="5dp"
+                android:gravity="center|bottom"/>
 
         </androidx.cardview.widget.CardView>
 

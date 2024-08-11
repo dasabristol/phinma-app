@@ -35,9 +35,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     app:cardElevation="50dp"
+                    android:layout_gravity="center"
                     app:cardCornerRadius="30dp">
 
                     <ImageView

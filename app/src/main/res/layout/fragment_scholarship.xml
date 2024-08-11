@@ -22,6 +22,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+
         app:layout_constraintTop_toBottomOf="@+id/linearlayout7"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -30,12 +31,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp"
+            android:gravity="center"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
                 app:cardCornerRadius="30dp">
 
                 <ImageButton
@@ -44,11 +47,19 @@
                     android:layout_height="200dp"
                     android:background="@drawable/hka"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/details"
+                    android:gravity="center|bottom"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="5dp"/>
+
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 app:cardElevation="50dp"
                 android:layout_marginTop="20dp"
@@ -58,13 +69,21 @@
                     android:id="@+id/hkb"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@drawable/hkb"/>
+                    android:background="@drawable/hkb" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/details"
+                    android:gravity="center|bottom"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="5dp"/>
 
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 app:cardElevation="50dp"
                 android:layout_marginTop="20dp"
@@ -76,11 +95,19 @@
                     android:layout_height="200dp"
                     android:background="@drawable/hkc"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/details"
+                    android:gravity="center|bottom"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="5dp"/>
+
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 app:cardElevation="50dp"
                 android:layout_marginTop="20dp"
@@ -91,6 +118,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:background="@drawable/hkd"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/details"
+                    android:gravity="center|bottom"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"/>
 
 
             </androidx.cardview.widget.CardView>
