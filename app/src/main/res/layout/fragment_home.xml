@@ -7,17 +7,17 @@
     tools:context=".home">
 
     <LinearLayout
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
-    android:padding="10dp"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toTopOf="parent">
-
-    <ImageView
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/phinmalogo" />
-</LinearLayout>
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/phinmalogo" />
+    </LinearLayout>
 
 
     <LinearLayout
@@ -32,11 +32,13 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="130dp"
-            app:cardElevation="10dp"
+            android:layout_margin="10dp"
             android:layout_marginLeft="19dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
 
             <ImageButton
+                android:id="@+id/maps"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/map" />
@@ -44,18 +46,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="MAP"
                 android:layout_marginBottom="5dp"
-                android:gravity="center|bottom"/>
+                android:gravity="center|bottom"
+                android:text="MAP" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="130dp"
-            app:cardElevation="10dp"
             android:layout_marginLeft="19dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="10dp">
 
             <ImageButton
                 android:id="@+id/scholarship"
@@ -66,9 +69,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="SCHOLARSHIP"
                 android:layout_marginBottom="5dp"
-                android:gravity="center|bottom"/>
+                android:gravity="center|bottom"
+                android:text="SCHOLARSHIP" />
 
         </androidx.cardview.widget.CardView>
 
@@ -87,6 +90,7 @@
             android:layout_width="150dp"
             android:layout_height="130dp"
             app:cardElevation="10dp"
+            android:layout_margin="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
 
@@ -109,6 +113,7 @@
             android:layout_width="150dp"
             android:layout_height="130dp"
             app:cardElevation="10dp"
+            android:layout_margin="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
 
@@ -140,6 +145,7 @@
             android:layout_width="150dp"
             android:layout_height="130dp"
             app:cardElevation="10dp"
+            android:layout_margin="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
 
@@ -161,6 +167,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="130dp"
+            android:layout_margin="10dp"
             app:cardElevation="10dp"
             android:layout_marginLeft="19dp"
             app:cardCornerRadius="10dp">
