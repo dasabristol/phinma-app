@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_home2_to_course2"
             app:destination="@id/course2" />
+        <action
+            android:id="@+id/action_home2_to_map"
+            app:destination="@id/map" />
     </fragment>
     <fragment
         android:id="@+id/profile"
@@ -201,5 +204,14 @@
         <action
             android:id="@+id/action_tourism2_to_course2"
             app:destination="@id/course2" />
+    </fragment>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.management_app.map"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_map_to_home2"
+            app:destination="@id/home2" />
     </fragment>
 </navigation>

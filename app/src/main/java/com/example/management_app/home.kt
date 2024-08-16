@@ -36,6 +36,9 @@ class home : Fragment() {
         binding.course.setOnClickListener {
             findNavController().navigate(R.id.action_home2_to_course2)
         }
+        binding.maps.setOnClickListener {
+            findNavController().navigate(R.id.action_home2_to_map)
+        }
 
 
         return binding.root
