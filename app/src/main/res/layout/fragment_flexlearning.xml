@@ -41,7 +41,7 @@
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@drawable/flexlearning"/>
+                    android:background="@drawable/programbg"/>
 
             </androidx.cardview.widget.CardView>
 
