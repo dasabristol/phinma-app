@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_home2_to_map"
             app:destination="@id/map" />
+        <action
+            android:id="@+id/action_home2_to_nexthome"
+            app:destination="@id/nexthome" />
     </fragment>
     <fragment
         android:id="@+id/profile"
@@ -214,4 +217,9 @@
             android:id="@+id/action_map_to_home2"
             app:destination="@id/home2" />
     </fragment>
+    <fragment
+        android:id="@+id/nexthome"
+        android:name="com.example.management_app.nexthome"
+        android:label="fragment_nexthome"
+        tools:layout="@layout/fragment_nexthome" />
 </navigation>

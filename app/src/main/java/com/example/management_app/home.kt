@@ -39,6 +39,9 @@ class home : Fragment() {
         binding.maps.setOnClickListener {
             findNavController().navigate(R.id.action_home2_to_map)
         }
+        binding.next.setOnClickListener {
+            findNavController().navigate(R.id.action_home2_to_nexthome)
+        }
 
 
         return binding.root
