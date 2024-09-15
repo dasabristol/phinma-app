@@ -49,9 +49,16 @@ class EventCalendar : Fragment() {
         val sdf = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
 
         // Add events
-        eventsMap["19-09-2024"] = listOf("KOMSAYAHAN - 1ST DAY")
-        eventsMap["20-09-2024"] = listOf("KOMSAYAHAN - 2ND DAY")
-        eventsMap["21-09-2024"] = listOf("KOMSAYAHAN - LAST DAY")
+        eventsMap["19-09-2024"] = listOf("KOMSAYAHAN - DAGUPAN 1st Day")
+        eventsMap["20-09-2024"] = listOf("KOMSAYAHAN - DAGUPAN 2nd Day")
+        eventsMap["21-09-2024"] = listOf("KOMSAYAHAN - DAGUPAN 3rd Day")
+        eventsMap["05-12-2024"] = listOf("LAMPARAAN - UPANG U Atrium")
+        eventsMap["09-12-2024"] = listOf("NINGNING PROJECT - AROUND URDANETA")
+        eventsMap["12-12-2024"] = listOf("LINGAPWIKA COMMUNITY OUTREACH PROGRAM - LOCAL SCHOOL")
+        eventsMap["03-01-2025"] = listOf("EUCHARISTIC CELEBRATION - UPANG U Atrium")
+        eventsMap["09-01-2025"] = listOf("STRAND DAY - UPANG U Atrium")
+        eventsMap["14-01-2025"] = listOf("SEMINAR FOR THE DSPC PARTICIPANTS - UPANG U Atrium")
+
 
         // CalendarView date change listener
         binding.calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
@@ -84,14 +91,15 @@ class EventCalendar : Fragment() {
                 if (events.isNotEmpty() && events[0] != "No events") {
                     for (event in events) {
                         try {
-                            val calendar = Calendar.getInstance()
-                            calendar.set(Calendar.YEAR, date.split("-")[2].toInt())
-                            calendar.set(Calendar.MONTH, date.split("-")[1].toInt() - 1)
-                            calendar.set(Calendar.DAY_OF_MONTH, date.split("-")[0].toInt())
-                            calendar.set(Calendar.HOUR_OF_DAY, timePicker.hour)
-                            calendar.set(Calendar.MINUTE, timePicker.minute)
-                            calendar.set(Calendar.SECOND, 0)
-                            calendar.set(Calendar.MILLISECOND, 0)
+                            val calendar = Calendar.getInstance().apply {
+                                set(Calendar.YEAR, date.split("-")[2].toInt())
+                                set(Calendar.MONTH, date.split("-")[1].toInt() - 1)
+                                set(Calendar.DAY_OF_MONTH, date.split("-")[0].toInt())
+                                set(Calendar.HOUR_OF_DAY, timePicker.hour)
+                                set(Calendar.MINUTE, timePicker.minute)
+                                set(Calendar.SECOND, 0)
+                                set(Calendar.MILLISECOND, 0)
+                            }
 
                             scheduleReminder(event, calendar.timeInMillis)
                         } catch (e: Exception) {
@@ -100,6 +108,7 @@ class EventCalendar : Fragment() {
                     }
                 }
             }
+            .setNegativeButton("Cancel", null)
             .show()
     }
 
@@ -108,7 +117,6 @@ class EventCalendar : Fragment() {
         val intent = Intent(requireContext(), ReminderReceiver::class.java).apply {
             putExtra("eventTitle", eventTitle)
         }
-
         val pendingIntent = PendingIntent.getBroadcast(
             requireContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )

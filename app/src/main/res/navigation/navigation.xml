@@ -237,5 +237,13 @@
         <action
             android:id="@+id/action_eventCalendar_to_nexthome"
             app:destination="@id/nexthome" />
+        <action
+            android:id="@+id/action_eventCalendar_to_event_list"
+            app:destination="@id/event_list" />
     </fragment>
+    <fragment
+        android:id="@+id/event_list"
+        android:name="com.example.management_app.event_list"
+        android:label="fragment_event_list"
+        tools:layout="@layout/fragment_event_list" />
 </navigation>
