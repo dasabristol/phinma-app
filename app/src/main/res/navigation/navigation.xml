@@ -221,5 +221,21 @@
         android:id="@+id/nexthome"
         android:name="com.example.management_app.nexthome"
         android:label="fragment_nexthome"
-        tools:layout="@layout/fragment_nexthome" />
+        tools:layout="@layout/fragment_nexthome" >
+        <action
+            android:id="@+id/action_nexthome_to_eventCalendar"
+            app:destination="@id/eventCalendar" />
+        <action
+            android:id="@+id/action_nexthome_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventCalendar"
+        android:name="com.example.management_app.EventCalendar"
+        android:label="fragment_event_calendar"
+        tools:layout="@layout/fragment_event_calendar" >
+        <action
+            android:id="@+id/action_eventCalendar_to_nexthome"
+            app:destination="@id/nexthome" />
+    </fragment>
 </navigation>
