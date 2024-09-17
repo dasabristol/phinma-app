@@ -105,7 +105,179 @@
                 android:gravity="center|bottom"
                 android:textSize="17dp"
                 android:layout_marginBottom="10dp"/>
-            
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/registratoffice"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/registrar"
+                android:gravity="center|bottom"
+                android:textSize="17dp"
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/csdl"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/csdl"
+                android:gravity="center|bottom"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:justificationMode="inter_word"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/clinic"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/clinic"
+                android:gravity="center|bottom"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/collegedept"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/collegedept"
+                android:gravity="center|bottom"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/library"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/library"
+                android:gravity="center|bottom"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/comfortroom"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|bottom"
+                android:textSize="17dp"
+                android:text="@string/haha"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp"
+                app:cardMaxElevation="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/secondfloormap"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/secondfloormap"
+                android:gravity="center|bottom"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"/>
+
 
 
         </LinearLayout>
