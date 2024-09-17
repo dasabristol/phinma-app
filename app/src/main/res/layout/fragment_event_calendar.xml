@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".EventCalendar">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Header Section with Logo -->
     <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
@@ -19,10 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/phinmalogo" />
-
-
     </LinearLayout>
 
+    <!-- Calendar View -->
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="0dp"
@@ -33,5 +32,162 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event List"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView">
+
+        <GridLayout
+            android:layout_marginTop="100dp"
+            android:id="@+id/eventGridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:padding="10dp"
+            android:rowCount="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Event"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="19-09-2024" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="KOMSAYAHAN - DAGUPAN 1st Day" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="20-09-2024" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="KOMSAYAHAN - DAGUPAN 2nd Day" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="21-09-2024" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="KOMSAYAHAN - DAGUPAN 3rd Day" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="05-12-2024" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LAMPARAAN - UPANG U Atrium"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09-12-2024"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ningning"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-12-2024"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lingapwika"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03-01-2025"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eucharistic"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09-01-2025"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRAND DAY - UPANG U Atrium"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14-01-2025"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seminar"
+                android:padding="8dp"/>
+
+
+        </GridLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
