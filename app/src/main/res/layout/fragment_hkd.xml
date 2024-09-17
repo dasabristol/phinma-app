@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/hkdbtn"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/phinmalogo" />
@@ -134,13 +135,6 @@
 
 
 
-            <Button
-                android:id="@+id/hkdbtn"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="See More Scholarship"/>
 
 
         </LinearLayout>

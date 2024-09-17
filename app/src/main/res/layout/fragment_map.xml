@@ -15,6 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/mapbtn"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/phinmalogo" />
@@ -104,12 +105,7 @@
                 android:gravity="center|bottom"
                 android:textSize="17dp"
                 android:layout_marginBottom="10dp"/>
-
-            <Button
-                android:id="@+id/mapbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="HOME"/>
+            
 
 
         </LinearLayout>
