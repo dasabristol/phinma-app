@@ -25,6 +25,9 @@ class nexthome : Fragment() {
         binding.eventcalendarbtn.setOnClickListener {
             findNavController().navigate(R.id.action_nexthome_to_eventCalendar)
         }
+        binding.handbookbtn.setOnClickListener {
+            findNavController().navigate(R.id.action_nexthome_to_studenthandbook)
+        }
         return binding.root
     }
 

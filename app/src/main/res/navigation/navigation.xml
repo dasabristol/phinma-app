@@ -228,6 +228,9 @@
         <action
             android:id="@+id/action_nexthome_to_home2"
             app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_nexthome_to_studenthandbook"
+            app:destination="@id/studenthandbook" />
     </fragment>
     <fragment
         android:id="@+id/eventCalendar"
@@ -246,4 +249,13 @@
         android:name="com.example.management_app.event_list"
         android:label="fragment_event_list"
         tools:layout="@layout/fragment_event_list" />
+    <fragment
+        android:id="@+id/studenthandbook"
+        android:name="com.example.management_app.studenthandbook"
+        android:label="fragment_studenthandbook"
+        tools:layout="@layout/fragment_studenthandbook" >
+        <action
+            android:id="@+id/action_studenthandbook_to_nexthome"
+            app:destination="@id/nexthome" />
+    </fragment>
 </navigation>
