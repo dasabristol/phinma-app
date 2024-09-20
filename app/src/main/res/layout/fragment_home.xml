@@ -191,6 +191,53 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="#46923c"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/studenthandbookbtn"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:background="#276221"
+                android:src="@drawable/handbook"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="90dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/eventcalendarbtn"
+                android:background="#276221"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/eventcalendar"/>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

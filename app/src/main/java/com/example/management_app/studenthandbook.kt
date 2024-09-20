@@ -20,7 +20,7 @@ class studenthandbook : Fragment() {
         binding = FragmentStudenthandbookBinding.inflate(inflater, container, false)
 
         binding.handbookbtn.setOnClickListener {
-            findNavController().navigate(R.id.action_studenthandbook_to_nexthome)
+            findNavController().navigate(R.id.action_studenthandbook_to_home2)
         }
         return binding.root
     }

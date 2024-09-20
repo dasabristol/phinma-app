@@ -36,7 +36,7 @@ class EventCalendar : Fragment() {
 
         // Back button navigation
         binding.calendarbackbtn.setOnClickListener {
-            findNavController().navigate(R.id.action_eventCalendar_to_nexthome)
+            findNavController().navigate(R.id.action_eventCalendar_to_home2)
         }
 
         return binding.root
